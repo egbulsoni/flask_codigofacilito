@@ -19,6 +19,6 @@ def saluda():
 def params():
     param = request.args.get('params1', 'no contiene este parametro.')
     param_dos = request.args.get('params2', 'no contiene este parametro.')
-    return "El parametro es {} , {}".format(param, param_dos) #Regresar un string
+    return "Los params son {} , {}".format(param, param_dos) #Regresar un string
 
 app.run( debug = True, port= 8000) #Se encarga de ejecutar el servidor 5000
